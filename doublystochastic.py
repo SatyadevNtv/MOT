@@ -123,7 +123,7 @@ class DoublyStochastic(Manifold):
         # `k` doublystochastic manifolds
         self._k = self._p.shape[0]
 
-        self._name = ("{:d} {:d}X{:d} matrices with positive entries such that row sum is p and column sum is q respectively.".format(len(p), n, m))
+        self._name = ("{:d} {:d}X{:d} matrices with positive entries such that row sum is p and column sum is q respectively.".format(len(self._p), n, m))
 
         self._dim = self._k * (self._n - 1)*(self._m - 1)
         self._e1 = proc.ones(n)
@@ -243,13 +243,12 @@ class DoublyStochastic(Manifold):
 
 
     def retr(self, x, u):
-        print(f"In Retraction ..")
         x = proc.array(x)
         u = proc.array(u)
 
         Y = x * proc.exp(u/x)
-        Y = proc.maximum(Y, 1e-50)
-        Y = proc.minimum(Y, 1e50)
+        Y = proc.maximum(Y, 1e-16)
+        Y = proc.minimum(Y, 1e16)
         return SKnopp(Y, self._p, self._q, self._maxSKnoppIters, self._checkperiod)
 
 
