@@ -1,0 +1,73 @@
+samples: 1000 (entropic GW \epsilon: 1e-3)
+At optima MOT Cost: 0.009587228431641864, GW Cost: 0.00967327487488051
+
+=====================================================================
+
+samples: 5000 (entropic GW \epsilon: 1e-3)
+At optima MOT Cost: 0.007611672577221784, GW Cost: 0.007983555518796953
+
+=====================================================================
+
+samples: 1000 (entropic GW \epsilon: 1e-3)
+non-uniform row, col constraints
+MOT Cost: 0.009081508411419414, GW Cost: 0.009195944937028744
+Constraints
+MOT:
+w.r.t p: 6.549602832572707e-18
+w.r.t q: 2.824943334878172e-07
+GW:
+w.r.t p: 8.096239698804314e-18
+w.r.t q: 7.637508147805983e-10
+
+=====================================================================
+
+samples: 1000 (entropic GW, MOT \epsilon: 1e-3)
+non-uniform row, col constraints
+MOT Cost: 0.009205539233652194, GW Cost: 0.009195944937028744
+Constraints
+MOT:
+w.r.t p: 4.841336238648324e-18
+w.r.t q: 2.7936777124367973e-09
+GW:
+w.r.t p: 8.096239698804314e-18
+w.r.t q: 7.637508147805983e-10
+
+=====================================================================
+
+samples: 1000 (entropic GW, MOT \epsilon: 1e-3, 1e-4 resp.)
+non-uniform row, col constraints
+MOT Cost: 0.009069762325704972, GW Cost: 0.009195944937028744
+Constraints
+MOT:
+w.r.t p: 5.982175452079668e-18
+w.r.t q: 1.7601542523121027e-08
+GW:
+w.r.t p: 8.096239698804314e-18
+w.r.t q: 7.637508147805983e-10
+
+=====================================================================
+
+samples: 1000 (entropic GW, frob MOT \epsilon: 1e-3, 1e-3 resp.)
+non-uniform row, col constraints
+MOT Cost: 0.009081522766243022, GW Cost: 0.009195944937028744
+Constraints
+MOT:
+w.r.t p: 6.7780990616010225e-18
+w.r.t q: 2.7234807529492303e-07
+GW:
+w.r.t p: 8.096239698804314e-18
+w.r.t q: 7.637508147805983e-10
+
+=====================================================================
+
+samples: 1000 (entropic GW, frob MOT \epsilon: 1e-3, 1e-2 resp.)
+non-uniform row, col constraints
+MOT Cost: 0.009081683488989967, GW Cost: 0.009195944937028744
+Constraints
+MOT:
+w.r.t p: 6.586853942370115e-18
+w.r.t q: 2.2476521862126136e-07
+GW:
+w.r.t p: 8.096239698804314e-18
+w.r.t q: 7.637508147805983e-10
+=====================================================================

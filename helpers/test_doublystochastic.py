@@ -2,15 +2,12 @@ import cProfile
 import sys
 from numpy import random as rnd
 import numpy as np
-import cupy as cp
 from scipy.io import loadmat
 
 from pymanopt.manifolds.doublystochastic import DoublyStochastic, SKnopp
 from pymanopt.solvers import ConjugateGradient, TrustRegions
 from pymanopt import Problem
 from pymanopt import function
-
-from IPython import embed
 
 def test_doublystochastic(N, M, K):
     rnd.seed(21)
